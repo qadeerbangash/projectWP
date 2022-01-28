@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>WP-FinalProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <label class="logo">NADRA</label>
+        <!-- <button class="btn1">Book a Table</button> -->
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Help</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact</a></li>
+     
+        </ul>
+      
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+<br>
+<br>
+    <center>
+        <img width="300" height="200" src="nadra.jpg">
+        <h1><INS>REGISTRATION FORM FOR NIC</INS></h1>
+    </center><br>
+    <form action="form2.html" id="form">
+        <table cellspacing="2px">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input id="fname" type="text" required="required" placeholder="Enter first name" >(max 30 characters a-z and A-Z)</td>
+            </tr>
+
+            <tr>
+                <td><br> LAST NAME </td>
+                <td><br> <input id="lname" type="text" required="required" placeholder="Enter last name">(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td><br>DATE OF BIRTH</td>
+                <td><br> <input id="dob" type="date"></td>
+            </tr>
+
+            <tr>
+                <td><br>EMAIL ID</td>
+                <td><br><input id="email" type="email" placeholder="Enter email address"></td>
+            </tr>
+
+            <tr>
+                <td><br>MOBILE NUMBER</td>
+                <td><br><input id="number" type="number" required="required" placeholder="Enter mobile number">(10 digit number)</td>
+            </tr>
+
+            <tr>
+                <td><br>GENDER</td>
+                <td><br>
+                    <!-- Male<input type="radio" name="gender">
+                    Female<input type="radio" name="gender"></td> -->
+
+                    <select id="gender" name="gender">
+                        <option value="Gender">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                 </seclect>
+
+
+            </tr>
+
+            <tr>
+                <td><br>ADDRESS</td>
+                <td><br><textarea id="address" name="address" required="required" cols="30" rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><br>CITY</td>
+                <td><br><input id="city" type="text" placeholder="Enter city name">(max 30 characters a-z and A-Z)</td>
+            </tr>
+
+            <tr>
+                <td><br>PIN CODE</td>
+                <td><br><input id="code" type="password" placeholder="Enter pin code">(6 digit number)</td>
+            </tr>
+
+            <tr>
+                <td><br>STATE</td>
+                <td><br><input id="state" type="text" placeholder="Enter state">(max 30 characters a-z and A-Z)</td>
+            </tr>
+
+            <tr>
+                <td><br>COUNTRY</td>
+                <td><br><input id="country" type="text" placeholder="Enter country"></td>
+            </tr>
+
+            <tr>
+                <td><br> HOBBIES</td>
+                <td><br>
+
+                    <select id="hobbies" name="hobbies">
+                        <option value="Hobbies">Hobbies</option>
+                        <option value="Drawing">Drawing</option>
+                        <option value="Singing">Singing</option>
+                        <option value="Dancing">Dancing</option>
+                        <option value="Sketching">Sketching</option>
+                   
+                    
+                 </seclect>
+                </td>
+                <td>Others<input id="other" type="text" name="hobbies"></td>
+            </tr>
+        </table>
+
+        <table cellspacing="2px">
+            <tr>
+                <td><br>QUALIFICATION<br></td>
+                <td><br>
+                    <select id="education" name="education">
+                        <option value="uneducated">uneducated</option>
+                        <option value="primary">primary</option>
+                        <option value="secondary">secondary</option>
+                        <option value="Inter">Inter</option>
+                        <option value="BS">BS</option>
+                        <option value="MS">MS</option>
+                    </seclect>
+
+                </td>
+            </tr>
+        </table><br>
+        <center><button onclick="sub()" class="btn1" type="submit">Submit</button>
+            <input class="btn1" type="reset">
+        </center>
+
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
